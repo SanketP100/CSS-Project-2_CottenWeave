@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter";
+}
+
+@font-face {
+    font-family: "inter";
+    src: url(./Inter-VariableFont_slnt\,wght.woff);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 85px;
+    padding-top: 120px;
+    justify-content: flex-start;
+}
+
+#left {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 2vw;
+}
+
+#left h1 {
+    font-size: 8vw;
+    font-weight: 400;
+    line-height: 8vw;
+}
+
+#left-bottom {
+    width: 100%;
+    height: fit-content;
+    margin-top: 10vw;
+}
+
+#color {
+    width: fit-content;
+    font-size: 1.3vw;
+    border: 1px solid #000;
+    color: #363636da;
+    border-radius: 100px;
+    padding: 8px 8px;
+    display: flex;
+    align-items: center;
+    transition: all ease .3s;
+}
+
+#color:hover {
+    background-color: #522021d8;
+    color: #fff;
+}
+
+#color1 {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(161, 133, 97);
+    border-radius: 100px;
+    margin: 0px 3px;
+    margin-left: 10px;
+}
+
+#color2 {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(20, 26, 37);
+    border-radius: 100px;
+}
+
+#details {
+    margin-top: 30px;
+    width: 65%;
+    font-size: 1.3vw;
+}
+
+#details p {
+    font-size: 1.2vw;
+    margin-top: 1.2vw;
+    line-height: 25px;
+}
+
+#right {
+    width: 40%;
+    height: 90%;
+    margin-right: 10%;
+    position: relative;
+}
+
+#right-top {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#right-top h5 {
+    font-size: 1.1vw;
+}
+
+#right-top h4 {
+    font-size: 1.2vw;
+}
+
+#right-top i {
+    color: gold;
+}
+
+#right #img {
+    width: 100%;
+    height: calc(100% - 40px);
+    overflow: hidden;
+}
+
+#right img {
+    width: 100%;
+
+    object-fit: cover;
+}
+
+#right-gol {
+    width: 140px;
+    height: 140px;
+    color: #fff;
+    background: linear-gradient(to right, rgb(58, 58, 58), rgb(0, 0, 0));
+    position: absolute;
+    right: -10%;
+    top: 25%;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease .5s;
+    font-size: 1.2vw;
+}
+
+#right-gol:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#side-text {
+    position: absolute;
+    bottom: 45px;
+    left: -25px;
+    rotate: -90deg;
+    transform-origin: 0;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+
+@media (max-width:600px) {
+
+    #main {
+        flex-direction: column;
+        padding: 8% 3vw;
+        justify-content: flex-start;
+    }
+
+    #left {
+        width: 100%;
+        height: 50%;
+        justify-content: flex-start;
+    }
+
+    #left h1 {
+        font-size: 15vw;
+        font-weight: 700;
+        line-height: 13vw;
+    }
+
+    #left-bottom {
+        height: fit-content;
+    }
+
+    #color {
+        font-size: 3.7vw;
+        padding: 4px 6px;
+    }
+
+    #color:hover {
+        background-color: #707070d8;
+        color: #000000;
+    }
+
+    #details {
+        font-size: 4.5vw;
+        margin-top: 5vw;
+        width: 95%;
+    }
+
+    #details p {
+        font-size: 3.8vw;
+        margin-top: 2vw;
+        line-height: 4.8vw;
+        letter-spacing: .5px;
+    }
+
+    #right {
+        width: 90%;
+        height: 50%;
+        margin: auto;
+        margin-top: 10vw;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #right-top {
+        height: 50px;
+    }
+
+    #right-top h4 {
+        font-size: 4.5vw;
+    }
+
+    #right-top h5 {
+        font-size: 4vw;
+
+    }
+
+    #right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #right-gol {
+        width: 120px;
+        height: 120px;
+        background: linear-gradient(to left bottom, rgb(0, 0, 0), rgb(37, 37, 37), rgb(78, 78, 78));
+        right: -6%;
+        top: -10%;
+        font-size: 4vw;
+    }
+
+    #side-text {
+        left: -15px;
+        font-size: 5vw;
+    }
+
+}
